@@ -7,7 +7,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
       cy.title().should('be.equal', 'Duon - RH')
     })
 
-    it.only('realiza login', () => {
+    it('realiza login', () => {
       cy.get('[data-pc-name="inputtext"]')
       .type('pedro.vinicius@dsgtechnology.com.br', {delay: 0})
       .should('have.value', 'pedro.vinicius@dsgtechnology.com.br')
